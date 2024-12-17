@@ -98,8 +98,9 @@
         <div class="caption-container">
             <p id="caption"></p>
     </div>
-    
-    <div class="row">
+    <div class="card" style="opacity: 0;" onmouseover="display()" onmouseleave="hide()">
+        <img src="https://media.cntraveler.com/photos">
+    <div class="row" >
      <button onclick="plusSlides(-1)">   <a class="prev" >&#10094;</a></button>
     <div class="column">
         <img class="demo cursor" src="https://media.cntraveler.com/photos/5e45b1d6a007f90008d5bb0d/master/w_800%2Cc_limit/Great%2520Barrier%2520Reef%2520GettyImages-157400772.jpg" style="width:100%" onclick="currentSlide(19)" alt="Great Barrier Reef, Australia">
@@ -182,17 +183,11 @@
     <button onclick="plusSlides(1)"><a class="next" >&#10095;</a></button>
     
 </div>
+</div>
 <div>
 <h1 id="name"></h1>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const columns = document.querySelectorAll('.column img');
-        columns.forEach(column => {
-            column.addEventListener('click', function() {
-                document.getElementById('name').innerText = this.alt;
-            });
-        });
-    });
+    
 </script>
 
 </body>

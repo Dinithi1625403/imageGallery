@@ -30,8 +30,15 @@ img{
 .number{
     position: absolute;
     top: 10px;
+    float: right;
+    right: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 50px 50px 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .row{
+    display: none;
     display: flex;
     justify-content: center;
     bottom: 0;
@@ -39,7 +46,7 @@ img{
     z-index: 1;
     position: absolute;
     height: 300px;
-    background: linear-gradient(to top, rgba(38, 57, 77, 0.8), rgba(38, 57, 77, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(38, 57, 77, 0));
     width: 100vw;
     overflow-y: hidden;
     

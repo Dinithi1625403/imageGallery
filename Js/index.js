@@ -11,25 +11,10 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
-    var img = slides[slideIndex - 1].getElementsByTagName("img")[0];
-    if (img) {
-        document.getElementById("name").innerHTML = img.alt;
-    } else {
-        document.getElementById("name").innerHTML = "";
-    }
+   
 }
 
-function showH1(n) {
-    var i;
-    var h1 = document.getElementsByClassName("h1");
-    
-    if (n > h1.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = h1.length}
-    for (i = 0; i < h1.length; i++) {
-        h1[i].style.display = "none";
-    }
-    h1[slideIndex - 1].style.display = "block";
-}
+
 
 function showColumn(n) {
     var i;
@@ -49,6 +34,12 @@ function showColumn(n) {
     column[columnIndex+1].style.width = "300px";
     column[columnIndex+1].style.height = "150px"; // Set height for the previous left corner slide
     column[columnIndex+1].style.marginTop = "70px"; // Set margin-top
+    if (columnIndex + 1 < column.length) {
+        document.getElementById('name').innerText = column[columnIndex + 1].children[0].alt;
+    } else {
+        document.getElementById('name').innerText = "";
+    }
+
 
     column[columnIndex - 1].style.display = "block";
     column[columnIndex - 1].style.width = "";
@@ -75,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function currentSlide(n) {
     showSlides(slideIndex = n);
     showColumn(columnIndex = n);
-    showH1(slideIndex = n);
+    
 }
 
 function plusSlides(n) {
@@ -84,10 +75,31 @@ function plusSlides(n) {
     }
     showSlides(slideIndex += n);
     showColumn(columnIndex += n);
+    
 }
 
-function showCaption(index) {
-    var slides = document.getElementsByClassName("slides");
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = slides[index].getElementsByTagName("img")[0].alt;
+    document.addEventListener("DOMContentLoaded", function() {
+        const columns = document.querySelectorAll('.column img');
+        columns.forEach(column => {
+            column.addEventListener('click', function() {
+                document.getElementById('name').innerText = this.alt;
+            });
+        });
+    });
+
+
+
+function display() {
+    var cards = document.getElementsByClassName("card");
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].style.opacity = "1";
+    }
 }
+
+function hide() {
+    var cards = document.getElementsByClassName("card");
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].style.opacity = "0";
+    }
+}
+
