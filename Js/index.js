@@ -102,4 +102,12 @@ function hide() {
         cards[i].style.opacity = "0";
     }
 }
+document.addEventListener('mousemove', function(e) {
+    var cursor = document.getElementById('circleCursor');
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+    cursor.style.right = e.pageX + 'px';
+    cursor.style.bottom = e.pageY + 'px';
+    
+});
 
