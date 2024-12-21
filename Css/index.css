@@ -7,8 +7,71 @@ body{
     overflow-x: hidden;
     cursor: none;
 }
+.container{
+    display: flex;
+   
+    
+    background-color:rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 
-
+.alert{
+    display:block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height:200px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 5px solid #f4f4f4;
+    cursor: none;
+}
+.closebtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    color:white;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 0 10px 0 0;
+    
+    cursor: none;
+}
+.smbtn{
+    position: absolute;
+    transform:translate(-50%, 50%);
+    border-radius: 10px;
+    cursor: none;
+    border: #f4f4f4;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    cursor: none;
+   
+    }
+.smbtn:hover{
+    background-color: #6baddc;
+    color: white;
+    
+}
 
 .slides {
     display: none;
@@ -85,7 +148,7 @@ img{
     float: left;
     
 }
-button{
+.btn{
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 50px 50px 50px;
@@ -102,7 +165,7 @@ h1{
     text-align: center;
     font-size: 100%;
     background-color:rgb(0,0,0,0.5);
-    z-index: 3;
+    z-index: 1;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -150,4 +213,26 @@ h1{
 .drop1{
     left:-100px;
     top:-50px;
+}
+
+.go{
+    
+    background-color:white;
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+   
+    
+    padding: 10px;
+    border-radius:50%;
+    border: none;
+    transform: translate(-50%, 200%);
+    z-index: 6;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px 0px, rgba(0, 0, 0, 0.09) 0px 4px 2px 0px, rgba(0, 0, 0, 0.09) 0px 8px 4px 0px, rgba(0, 0, 0, 0.09) 0px 16px 8px 0px, rgba(0, 0, 0, 0.09) 0px 32px 16px 0px;
+    
+}
+.go:hover{
+    padding: 15px;
 }

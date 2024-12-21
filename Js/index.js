@@ -1,3 +1,16 @@
+function hideAlert() {
+    document.getElementsByClassName('alert')[0].style.display = "none";
+    document.getElementsByClassName('container')[0].style.zIndex = "0";
+}
+
+
+
+function showAlert() {
+    
+    document.getElementsByClassName('alert')[0].style.display = "block";
+    document.getElementsByClassName('container')[0].style.zIndex = "2";
+}
+
 var slideIndex = 1;
 var columnIndex = 1;
 
