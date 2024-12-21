@@ -197,7 +197,7 @@ h1{
     width: 100%;
     background: #4f5051;
     border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
-    box-shadow: -20px 30px 16px #474848, -40px 60px 32px #030d1d, inset -6px 6px 10px #202021, inset 2px 6px 10px #0e0e0e, inset 20px -20px 22px white, inset 40px -40px 44px #a8ceff;
+    box-shadow: -10px 10px 16px #474848,  inset -6px 6px 10px #202021, inset 2px 6px 10px #0e0e0e, inset 20px -20px 22px white, inset 40px -40px 44px #a8ceff;
 }
 .circle-cursor::after{
     content: "";
@@ -208,7 +208,7 @@ h1{
   border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
   left: 20px;
   top: 10px;
-  box-shadow: 16px 40px 0 -10px white;
+ 
   opacity: 0.8;
 }
 .drop1{
