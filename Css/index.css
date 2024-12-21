@@ -158,13 +158,14 @@ img{
     margin: 10px;
     margin-top: 100px;
     margin-bottom: 100px;
+    cursor: none;
 }
 h1{
     
     color: white;
     text-align: center;
     font-size: 100%;
-    background-color:rgb(0,0,0,0.5);
+    background-color:rgb(0,0,0,0.4);
     z-index: 1;
     position: absolute;
     bottom: 0;
