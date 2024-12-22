@@ -6,10 +6,9 @@
 </head>
 <body onload="showAlert()" id="main" background="" ondblclick="hide()">
     <header>
-    <script src="Js/index.js"></script>
-        
-       
+    <script src="Js/index.js"></script>   
     </header>
+    <!--Alert-->
        <div class="container">
         <div class="alert" >
             <span class="closebtn"  onclick="hideAlert()">&times;</span> 
@@ -22,6 +21,7 @@
         </div>
         </div>
     </div>
+    <!-- Full-width images with number and caption text -->
         <div class="slides" style="display: block;">
             <div class="number">1 / 20</div>
             <img src="https://media.cntraveler.com/photos/5cb63a087b743b471660a8da/master/w_800%2Cc_limit/Angel-Falls-Venezuela_GettyImages-165513023.jpg">
@@ -108,11 +108,15 @@
         <div class="caption-container">
             <p id="caption"></p>
     </div>
+
+
     <div class="card" style="opacity: 0;" onmouseover="display()" >
-        <img src="https://media.cntraveler.com/photos">
+        
     <div class="row" >
+        <!--  previous button -->
      <button class="btn"   onclick="plusSlides(-1)">   <a class="prev" >&#10094;</a></button>
     <div class="column">
+        <!-- Thumbnail images -->
         <img class="demo cursor" src="https://media.cntraveler.com/photos/5e45b1d6a007f90008d5bb0d/master/w_800%2Cc_limit/Great%2520Barrier%2520Reef%2520GettyImages-157400772.jpg" style="width:100%" onclick="currentSlide(19)" alt="Great Barrier Reef, Australia">
     </div>
     <div class="column">
@@ -189,7 +193,7 @@
             <img class="demo cursor" src="https://media.cntraveler.com/photos/5cb63a087b743b350a60a8d9/master/w_800%2Cc_limit/Antarctica-_GettyImages-148815908.jpg" style="width:100%" onclick="currentSlide(2)" alt="Antarctica">
         </div>
        
-    
+     <!--next button -->
     <button class="btn" onclick="plusSlides(1)"><a class="next" >&#10095;</a></button>
     
 </div>
