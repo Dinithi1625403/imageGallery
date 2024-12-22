@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Image Gallery</h1>
 
-<p align="center"><img src="Screenshot" alt="project-image"></p>
+<p align="center"><img src="Screenshot.png" alt="project-image"></p>
 
 <p id="description">Image Gallery is a web-based project developed using HTML CSS and JavaScript. It provides a visually appealing and interactive platform to display and organize images. The project features dynamic image filtering and hover effects offering a seamless and engaging experience tailored for users.</p>
 
@@ -10,9 +10,9 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="Screenshot1.png" alt="project-screenshot" width="200px" height="100px/">
+<img src="Screenshot1.png" alt="project-screenshot">
 
-<img src="Screenshot2.png" alt="project-screenshot" width="200px" height="100px/">
+<img src="Screenshot2.png" alt="project-screenshot">
 
   
   
